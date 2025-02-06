@@ -8,8 +8,7 @@ class Metrics:
         self.endpoint = "https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze"
 
     def toxicity_score(self, text: str) -> float:
-        payload = 
-        {
+        payload = {
             "comment": {"text": text},
             "languages": ["en"],
             "requestedAttributes": {"TOXICITY": {}}
